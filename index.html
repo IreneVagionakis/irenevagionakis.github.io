@@ -116,7 +116,6 @@
         .section h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem;
-            font-weight: 400;
             color: var(--deep-green);
             margin-bottom: 1rem;
             letter-spacing: 0.5px;
@@ -161,7 +160,7 @@
         }
 
         footer {
-            margin-top: 4rem;
+            margin-top: 3rem;
             text-align: center;
             font-size: 0.85rem;
             color: var(--text-soft);
@@ -170,7 +169,15 @@
             position: relative;
         }
 
-        footer::before {
+        .contacts {
+            margin-bottom: 1.5rem;
+        }
+
+        .contacts a {
+            text-decoration: none;
+        }
+
+        .bottom-line::before {
             content: '';
             display: block;
             width: 100%;
@@ -482,16 +489,12 @@
                     </div>
                 </div>
             </section>
-
-            <section id="contact" class="section">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:irene.vagionakis@mail.com">irene.vagionakis&#64;mail.com</a></p>
-                <p>GitHub: <a href="https://github.com/irenevagionakis" target="_blank">irenevagionakis</a></p>
-            </section>
         </main>
 
         <footer>
-            <p>2026 · Live simply. Enjoy life.</p>
+            <p class="contacts">Email: <a href="mailto:irene.vagionakis@mail.com">irene.vagionakis&#64;mail.com</a>
+            · GitHub: <a href="https://github.com/irenevagionakis" target="_blank">irenevagionakis</a></p>
+            <p class="bottom-line">2026 · Live simply. Enjoy life.</p>
         </footer>
     </div>
 

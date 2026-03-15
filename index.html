@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --taupe: #C9BDB0;
             --cream: #FAF6F0;
-            --warm-brown: #6B5340;
-            --warm-brown-light: #8B7355;
-            --soft-lavender: #B8A9C9;
+            --taupe: #C9BDB0;
+            --taupe-dark: #B5A99A;
             --text-main: #5D4E37;
             --text-soft: #6B5B4B;
+            --deep-green: #4B6B3A;
+            --deep-green-light: #668458;
+            --sage: #A8BBA8;
         }
 
         * {
@@ -78,7 +79,7 @@
             font-size: 3rem;
             font-weight: 300;
             margin-bottom: 0.5rem;
-            color: var(--warm-brown-light);
+            color: var(--deep-green);
         }
 
         .subtitle {
@@ -107,7 +108,7 @@
             top: 0.5rem;
             bottom: 0.5rem;
             width: 2px;
-            background: linear-gradient(to bottom, #B5A99A, var(--taupe));
+            background: linear-gradient(to bottom, var(--taupe-dark), var(--taupe));
             border-radius: 2px;
             opacity: 0.6;
         }
@@ -116,7 +117,7 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem;
             font-weight: 400;
-            color: var(--warm-brown-light);
+            color: var(--deep-green);
             margin-bottom: 1rem;
             letter-spacing: 0.5px;
             font-style: italic;
@@ -130,14 +131,13 @@
         }
 
         a {
-            color: var(--warm-brown);
+            color: var(--text-soft);
             text-decoration: underline;
             text-decoration-color: var(--taupe);
             text-underline-offset: 3px;
             text-decoration-thickness: 1px;
             transition: all 0.3s ease;
             position: relative;
-            font-weight: 500;
             background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(201, 189, 176, 0.35) 50%);
             background-size: 240% 100%;
             background-position: 0%;
@@ -147,12 +147,12 @@
 
         a:hover {
             background-position: 100%;
-            color: var(--text-main);
-            text-decoration-color: var(--warm-brown);
+            color: var(--text-soft);
+            text-decoration-color: var(--text-soft);
         }
 
         a:focus {
-            outline: 2px dashed var(--warm-brown);
+            outline: 2px dashed var(--text-soft);
             outline-offset: 3px;
         }
 
@@ -203,7 +203,7 @@
         }
 
         .project-card h3 a {
-            color: var(--warm-brown);
+            color: var(--text-main);
             text-decoration: underline;
             text-decoration-color: var(--taupe);
             text-underline-offset: 3px;
@@ -213,7 +213,7 @@
 
         .project-card h3 a:hover {
             color: var(--text-main);
-            text-decoration-color: var(--warm-brown);
+            text-decoration-color: var(--text-soft);
         }
 
         .project-card p {
@@ -225,7 +225,7 @@
 
         .project-card .tech {
             font-size: 0.75rem;
-            color: var(--text-soft);
+            color: var(--deep-green);
             margin-top: 0.6rem;
             letter-spacing: 0.15px;
             text-transform: uppercase;
@@ -264,7 +264,7 @@
             padding: 0.5rem 0.75rem;
             border-radius: 4px;
             cursor: pointer;
-            color: var(--warm-brown);
+            color: var(--text-soft);
             font-size: 1.2rem;
             transition: all 0.3s ease;
             flex-shrink: 0;
@@ -297,7 +297,7 @@
         }
 
         .dot.active {
-            background: var(--warm-brown);
+            background: var(--deep-green);
             transform: scale(1.3);
         }
          /* PROJECT CARDS END */

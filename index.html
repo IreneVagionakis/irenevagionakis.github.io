@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene Vagionakis</title>
+    <title>Irene Vagionakis – Info</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
         }
 
         .container {
-            max-width: 720px;
+            max-width: 790px;
             margin: 0 auto;
             padding: 4rem 2rem 3rem;
             position: relative;
@@ -129,10 +129,6 @@
             margin: 0.8rem 0;
         }
 
-        #projects p:last-of-type {
-            line-height: 2.2;
-        }
-
         a {
             color: var(--warm-brown);
             text-decoration: underline;
@@ -156,7 +152,7 @@
         }
 
         a:focus {
-            outline: 2px dashed var(--taupe);
+            outline: 2px dashed var(--warm-brown);
             outline-offset: 3px;
         }
 
@@ -182,6 +178,78 @@
             margin: 0 auto 1.5rem;
             background: linear-gradient(to right, transparent, var(--taupe), transparent);
         }
+
+        /* PROJECT CARDS START */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            padding: 1.25rem 1.5rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            border: 1px solid rgba(201, 189, 176, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.8);
+            border-color: var(--taupe);
+            transform: translateY(-2px);
+        }
+
+        .project-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+        }
+
+        .project-card h3 a {
+            color: var(--warm-brown);
+            text-decoration: underline;
+            text-decoration-color: var(--taupe);
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card h3 a:hover {
+            color: var(--text-main);
+            text-decoration-color: var(--warm-brown);
+        }
+
+        .project-card p {
+            font-size: 0.875rem;
+            color: var(--text-soft);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .project-card .tech {
+            font-size: 0.75rem;
+            color: var(--text-soft);
+            margin-top: 0.6rem;
+            letter-spacing: 0.15px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .more-projects {
+            margin-top: 1.25rem;
+            font-size: 0.9rem;
+            color: var(--text-soft);
+        }
+
+        .more-projects a {
+            color: var(--warm-brown);
+            text-decoration: underline;
+            text-decoration-color: var(--taupe);
+        }
+         /* PROJECT CARDS END */
 
         @media (max-width: 820px) {
             .container {
@@ -279,29 +347,63 @@
             <section id="about" class="section">
                 <h2>About</h2>
                 <p>My background is rooted in Classics (BA), Ancient History (MA), Ancient Heritage Studies (PhD), with postdoctoral research in Digital Humanities and extensive teaching in Digital Epigraphy and training in TEI EpiDoc workshops.</p>
-                <p>My expertise, acquired over a decade of work as a developer, is centred on XML TEI collections of historical documents and literary texts – inscriptions, papyri, manuscripts, early printed texts  –, digital lexica, web publishing platforms.</p>
+                <p>In over ten years as a developer, I have specialised in semantic web technologies for the publication of XML TEI collections of historical documents and literary texts – inscriptions, papyri, manuscripts, early printed texts –, digital lexica and online journals. My expertise covers all project technical aspects: data modelling, encoding support, frontend and backend web development, server deployment and administration.</p>
             </section>
 
             <section id="projects" class="section">
-                <h2>Projects</h2> 
-                <p>Most of the code can be found on <a href="https://github.com/irenevagionakis" target="_blank">GitHub</a>.</p>
-                <p><a href="https://ilc4clarin.ilc.cnr.it/cretaninscriptions" target="_blank">Cretan Institutional Inscriptions</a> · 
-                <a href="https://archiviomonaci.seai.uniroma1.it" target="_blank">Archivio Ernesto Monaci</a> · 
-                <a href="https://www.atticinscriptions.com/" target="_blank">Attic Inscriptions Online</a> · 
-                <a href="http://178.62.67.18/" target="_blank">Circus Factions in the Eastern Empire</a> · 
-                <a href="https://disci-pubblicazioni.unibo.it/" target="_blank">DiSCi Pubblicazioni</a> · 
-                <a href="https://ebyrome.it/" target="_blank">EByRome. Epigraphy of “Byzantine” Rome</a> · 
-                <a href="https://edv.seai.uniroma1.it/" target="_blank">Epigraphic Database Vernacular</a> · 
-                <a href="https://fiscus.unibo.it/" target="_blank">Fiscus. Fiscal Estate in Medieval Italy</a> · 
-                <a href="https://gotthelf-digital.ch/" target="_blank">Gotthelf Digital</a> · 
-                <a href="https://www.greekinscriptions.com/" target="_blank">Greek Inscriptions Online</a> · 
-                <a href="http://134.209.176.247/en/" target="_blank">Inscriptions of Aphrodisias<sup>2</sup></a> · 
-                <a href="https://igcyr2.unibo.it/" target="_blank">Inscriptions of Greek Cyrenaica<sup>2</sup></a> · 
-                <a href="https://ircyr2020.inslib.kcl.ac.uk" target="_blank">Inscriptions of Roman Cyrenaica</a> · 
-                <a href="https://irt-os.kdl.kcl.ac.uk" target="_blank">Inscriptions of Roman Tripolitania<sup>2</sup></a> · 
-                <a href="https://lares-lexicon.unibo.it/" target="_blank">LARES Lexicon</a> · <a href="https://github.com/MedCyprus/MedCyprusEFES" target="_blank">Painted Greek Inscriptions from Medieval Cyprus</a> · 
-                <a href="http://ppret-inscriptions.huma-num.fr/" target="_blank">PPRET. Les Préfets du Prétoire de l’Empire Tardif</a> · 
-                <a href="https://rke-digital.de/" target="_blank">RKE. Religious Tales Digital</a></p>
+                <h2>Selected Projects</h2> 
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><a href="https://ilc4clarin.ilc.cnr.it/cretaninscriptions" target="_blank">Cretan Institutional Inscriptions</a></h3>
+                        <p>Digital collection of Cretan institutional inscriptions (VII–I cent. BC). Web development and scholarly content from my PhD in Greek Epigraphy. Code on <a href="https://github.com/IreneVagionakis/CretanInscriptions" target="_blank">GitHub</a>.</p>
+                        <div class="tech">TEI EpiDoc · XSLT · JavaScript · Solr · EFES</div>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="https://gotthelf-digital.ch/" target="_blank">Gotthelf Digital</a></h3>
+                        <p>Digital edition of the works and letters of Swiss author Jeremias Gotthelf (1797–1854).</p>
+                        <div class="tech">TEI · XSLT · XQuery · JavaScript · Svelte · Node.js · D3.js · Lucene · eXist-db · IIIF</div>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="https://fiscus.unibo.it/" target="_blank">Fiscus. Fiscal Estate in Medieval Italy</a></h3>
+                        <p>Digital collection of Latin manuscripts from Medieval Italy (IX–XII cent.) concerning the fiscal estate, with interactive maps and graphs for data analysis. Code on <a href="https://github.com/FiscalEstate/Fiscus" target="_blank">GitHub</a>.</p>
+                        <div class="tech">TEI EpiDoc · XSD · oXygen framework · XSLT  · JavaScript · Leaflet · Cytoscape · Solr · EFES</div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Inscriptions of Libya: <a href="https://igcyr2.unibo.it/" target="_blank" title=" Inscriptions of Greek Cyrenaica²">IGCyr<sup>2</sup></a>, 
+                        <a href="https://ircyr2020.inslib.kcl.ac.uk" target="_blank" title="Inscriptions of Roman Cyrenaica">IRCyr</a>, 
+                        <a href="https://irt-os.kdl.kcl.ac.uk" target="_blank" title="Inscriptions of Roman Tripolitania²">IRT<sup>2</sup></a></h3>
+                        <p>Second edition of the digital corpora <i>Inscriptions of Greek Cyrenaica</i> (VII–I cent. BC) and <i>Greek Verse Inscriptions of Cyrenaica</i> (VI cent. BC – VI cent. AD). Code on <a href="https://github.com/IGCyr/IGCyr2-GVCyr2-EFES" target="_blank">GitHub</a>.</p>
+                        <p>First edition of the digital corpus <i>Inscriptions of Roman Cyrenaica</i> (I cent. BC – VII cent. AD). Code on <a href="https://github.com/kingsdigitallab/ircyr-efes" target="_blank">GitHub</a>.</p>
+                        <p>Second edition of the digital corpus <i>Inscriptions of Roman Tripolitania</i> (I cent. BC – VII cent. AD). Code on <a href="https://github.com/IRT2021/IRT-EFES" target="_blank">GitHub</a>.</p>
+                        <div class="tech">TEI EpiDoc · XSLT · JavaScript · Leaflet · Solr · EFES</div>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="https://rke-digital.de/" target="_blank">Religiöse Kurzerzählungen Digital</a></h3>
+                        <p>Digital edition of religious tales from Medieval German manuscripts (XIII–XVI cent.).</p>
+                        <div class="tech">TEI · XSLT · JavaScript · Vue · Node.js · Express.js · Vite · Vis.js · Solr · IIIF</div>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="https://archiviomonaci.seai.uniroma1.it" target="_blank">Archivio Ernesto Monaci</a></h3>
+                        <p>Digital edition of letters and manuscripts from the archive of the Italian Romance philologist Ernesto Monaci (1844–1918). Code on <a href="https://github.com/IreneVagionakis/ArchivioMonaci" target="_blank">GitHub</a>.</p>
+                        <div class="tech">TEI CMIF · XSLT · JavaScript · Solr · Kiln</div>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="https://www.atticinscriptions.com/" target="_blank">Attic Inscriptions Online</a></h3>
+                        <p>Digital collection of English translations of Attic inscriptions (VII cent. BC – V cent. AD).</p>
+                        <div class="tech">TEI EpiDoc · Python · Django · SQL · Elasticsearch</div>
+                    </div>
+                </div>
+                <p class="more-projects">More: 
+                    <a href="https://ebyrome.it/" target="_blank" title="Epigraphy of “Byzantine” Rome">EByRome</a> · 
+                    <a href="https://edv.seai.uniroma1.it/" target="_blank" title="Epigraphic Database Vernacular">EDV</a> · 
+                    <a href="http://178.62.67.18/" target="_blank" title="Circus Factions in the Eastern Empire">Factions</a> · 
+                    <a href="https://www.greekinscriptions.com/" target="_blank" title="Greek Inscriptions Online">GIO</a> · 
+                    <a href="http://134.209.176.247/en/" target="_blank" title="Inscriptions of Aphrodisias²">IAph<sup>2</sup></a> · 
+                    <a href="https://lares-lexicon.unibo.it/" target="_blank" title="LARES Lexicon">LARES Lexicon</a> · 
+                    <a href="https://github.com/MedCyprus/MedCyprusEFES" target="_blank" title="Painted Greek Inscriptions from Medieval Cyprus">MedCyprus</a> · 
+                    <a href="http://ppret-inscriptions.huma-num.fr/" target="_blank" title="Les Préfets du Prétoire de l’Empire Tardif">PPRET</a> · 
+                    <a href="https://disci-pubblicazioni.unibo.it/" target="_blank" title="Redazione DiSCi">Redazione DiSCi</a>.
+                    Most of the code is on <a href="https://github.com/irenevagionakis" target="_blank">GitHub</a>.</p>
             </section>
 
             <section id="contact" class="section">

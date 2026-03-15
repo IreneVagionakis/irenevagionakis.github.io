@@ -175,17 +175,22 @@
             text-decoration: none;
         }
 
-        .contacts::before, .bottom-line::before {
+        .contacts::before {
+            content: '';
+            display: block;
+            width: 10rem;
+            height: 1px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(to right, transparent, var(--taupe), transparent);
+        }
+        
+        .bottom-line::before {
             content: '';
             display: block;
             width: 100%;
             height: 1px;
             margin: 0 auto 1.5rem;
             background: linear-gradient(to right, transparent, var(--taupe), transparent);
-        }
-
-        .contacts::before {
-            width: 10rem;
         }
 
         /* PROJECT CARDS START */

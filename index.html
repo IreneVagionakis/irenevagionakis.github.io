@@ -12,11 +12,10 @@
             --cream: #FDF9F3;
             --taupe: #C9BDB0;
             --taupe-dark: #B5A99A;
-            --text-main: #5D4E37;
-            --text-soft: #6B5B4B;
-            --deep-green: #4B6B3A;
-            --deep-green-light: #668458;
+            --brown: #5D4E37;
             --sage: #A8BBA8;
+            --green: #668458;
+            --green-dark: #4B6B3A;
         }
 
         * {
@@ -28,7 +27,7 @@
         body {
             font-family: 'Quicksand', sans-serif;
             line-height: 1.8;
-            color: var(--text-main);
+            color: var(--brown);
             background: var(--cream);
             font-size: 16px;
             min-height: 100vh;
@@ -79,12 +78,12 @@
             font-size: 3rem;
             font-weight: 300;
             margin-bottom: 0.5rem;
-            color: var(--deep-green);
+            color: var(--green-dark);
         }
 
         .subtitle {
             font-size: 0.95rem;
-            color: var(--text-soft);
+            color: var(--brown);
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -115,7 +114,7 @@
         .section h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem;
-            color: var(--deep-green);
+            color: var(--green-dark);
             margin-bottom: 1rem;
             letter-spacing: 0.5px;
             font-style: italic;
@@ -124,12 +123,12 @@
         .section p {
             font-size: 0.95rem;
             line-height: 1.9;
-            color: var(--text-main);
+            color: var(--brown);
             margin: 0.8rem 0;
         }
 
         a {
-            color: var(--text-soft);
+            color: var(--brown);
             text-decoration: underline;
             text-decoration-color: var(--taupe);
             text-underline-offset: 3px;
@@ -145,12 +144,12 @@
 
         a:hover {
             background-position: 100%;
-            color: var(--text-soft);
-            text-decoration-color: var(--text-soft);
+            color: var(--brown);
+            text-decoration-color: var(--brown);
         }
 
         a:focus {
-            outline: 2px dashed var(--text-soft);
+            outline: 1px solid var(--brown);
             outline-offset: 3px;
         }
 
@@ -158,11 +157,20 @@
             outline: none;
         }
 
+        button:focus {
+            outline: 1px solid var(--brown);
+            outline-offset: 3px;
+        }
+
+        button:focus:not(:focus-visible) {
+            outline: none;
+        }
+
         footer {
             margin-top: 3rem;
             text-align: center;
             font-size: 0.85rem;
-            color: var(--text-soft);
+            color: var(--brown);
             letter-spacing: 1px;
             position: relative;
         }
@@ -217,7 +225,7 @@
         }
 
         .project-card h3 a {
-            color: var(--text-main);
+            color: var(--brown);
             text-decoration: underline;
             text-decoration-color: var(--taupe);
             text-underline-offset: 3px;
@@ -226,20 +234,20 @@
         }
 
         .project-card h3 a:hover {
-            color: var(--text-main);
-            text-decoration-color: var(--text-soft);
+            color: var(--brown);
+            text-decoration-color: var(--brown);
         }
 
         .project-card p {
             font-size: 0.875rem;
-            color: var(--text-soft);
+            color: var(--brown);
             margin: 0 0 0.1rem 0;
             line-height: 1.5;
         }
 
         .project-card .tech {
             font-size: 0.75rem;
-            color: var(--deep-green);
+            color: var(--green-dark);
             margin-top: 0.6rem;
             letter-spacing: 0.15px;
             text-transform: uppercase;
@@ -282,7 +290,7 @@
             padding: 0.5rem 0.75rem;
             border-radius: 4px;
             cursor: pointer;
-            color: var(--text-soft);
+            color: var(--brown);
             font-size: 1.2rem;
             transition: all 0.3s ease;
             flex-shrink: 0;
@@ -315,7 +323,7 @@
         }
 
         .dot.active {
-            background: var(--deep-green);
+            background: var(--green-dark);
             transform: scale(1.3);
         }
         /* PROJECT CARDS END */

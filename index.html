@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --cream: #FAF6F0;
+            --cream: #FDF9F3;
             --taupe: #C9BDB0;
             --taupe-dark: #B5A99A;
             --text-main: #5D4E37;
@@ -233,7 +233,7 @@
         .project-card p {
             font-size: 0.875rem;
             color: var(--text-soft);
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.1rem 0;
             line-height: 1.5;
         }
 
@@ -245,13 +245,18 @@
             text-transform: uppercase;
         }
 
-        .other-projects {
+        ul {
             list-style: disc;
             padding-left: 1.3em;
         }
         
+        ul li {
+            font-size: 0.875rem;
+            margin: 0;
+        }
+
         .other-projects li {
-            margin: 0.48rem 0;
+            margin: 0.68rem 0;
         }
 
         .carousel-controls {
@@ -442,9 +447,12 @@
                         <h3>Inscriptions of Libya: <a href="https://igcyr2.unibo.it/" target="_blank" title=" Inscriptions of Greek Cyrenaica²">IGCyr<sup>2</sup></a>, 
                         <a href="https://ircyr2020.inslib.kcl.ac.uk" target="_blank" title="Inscriptions of Roman Cyrenaica">IRCyr</a>, 
                         <a href="https://irt-os.kdl.kcl.ac.uk" target="_blank" title="Inscriptions of Roman Tripolitania²">IRT<sup>2</sup></a></h3>
-                        <p>Digital corpora <i>Inscriptions of Greek Cyrenaica<sup>2</sup></i> (VII–I cent. BC) and <i>Greek Verse Inscriptions of Cyrenaica<sup>2</sup></i> (VI cent. BC – VI cent. AD). Code on <a href="https://github.com/IGCyr/IGCyr2-GVCyr2-EFES" target="_blank">GitHub</a>.</p>
-                        <p>Digital corpus <i>Inscriptions of Roman Cyrenaica</i> (I cent. BC – VII cent. AD). Code on <a href="https://github.com/kingsdigitallab/ircyr-efes" target="_blank">GitHub</a>.</p>
-                        <p>Digital corpus <i>Inscriptions of Roman Tripolitania<sup>2</sup></i> (I cent. BC – VII cent. AD). Code on <a href="https://github.com/IRT2021/IRT-EFES" target="_blank">GitHub</a>.</p>
+                        <p>Four digital corpora of inscriptions from Greek and Roman Libya (VII cent. BC – VII cent. AD):</p>
+                        <ul>
+                            <li><i>Inscriptions of Greek Cyrenaica<sup>2</sup></i> and <i>Greek Verse Inscriptions of Cyrenaica<sup>2</sup></i> – code on <a href="https://github.com/IGCyr/IGCyr2-GVCyr2-EFES" target="_blank">GitHub</a></li>
+                            <li><i>Inscriptions of Roman Cyrenaica</i> – code on <a href="https://github.com/kingsdigitallab/ircyr-efes" target="_blank">GitHub</a></li>
+                            <li><i>Inscriptions of Roman Tripolitania<sup>2</sup></i> – code on <a href="https://github.com/IRT2021/IRT-EFES" target="_blank">GitHub</a></li>
+                        </ul>
                         <div class="tech">TEI EpiDoc · XSLT · JavaScript · Leaflet · Solr · EFES</div>
                     </div>
                     <div class="project-card">
